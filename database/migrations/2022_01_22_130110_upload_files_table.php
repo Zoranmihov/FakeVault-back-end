@@ -18,7 +18,7 @@ class UploadFilesTable extends Migration
             $table->string('description')->nullable(false);
             $table->string('name')->nullable(false);
             $table->string('type')->nullable(false);
-            $table->json("shared_with")->nullable(false);
+            $table->longText("shared_with")->nullable(false);
             $table->string('by_user')->nullable(false);
             $table->string('path')->nullable(false);
             $table->timestamps();
