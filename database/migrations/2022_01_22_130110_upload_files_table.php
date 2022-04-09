@@ -15,12 +15,12 @@ class UploadFilesTable extends Migration
     {
         Schema::create('uploaded_files', function (Blueprint $table) {
             $table->id();
-            $table->string('description')->nullable(false);
-            $table->string('name')->nullable(false);
-            $table->string('type')->nullable(false);
-            $table->longText("shared_with")->nullable(false);
-            $table->string('by_user')->nullable(false);
-            $table->string('path')->nullable(false);
+            $table->string('description');
+            $table->string('name');
+            $table->string('type');
+            $table->longText("shared_with");
+            $table->string('by_user');
+            $table->string('path');
             $table->timestamps();
         });
     }
