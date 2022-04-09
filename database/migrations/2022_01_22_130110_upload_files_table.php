@@ -18,7 +18,7 @@ class UploadFilesTable extends Migration
             $table->string('description');
             $table->string('name');
             $table->string('type');
-            $table->longText("shared_with");
+            $table->text("shared_with");
             $table->string('by_user');
             $table->string('path');
             $table->timestamps();
